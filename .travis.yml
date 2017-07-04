@@ -18,7 +18,7 @@ install:
   - bash -c "echo $APTPACKAGES"
   - sudo apt-get install $APTPACKAGES
   - pip install "tox==2.1.1"
-  - pip install libtorrent --user
+  - pip install libtorrent
 
 env:
   global:
