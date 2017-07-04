@@ -18,10 +18,10 @@ install:
   - bash -c "echo $APTPACKAGES"
   - sudo apt-get install $APTPACKAGES
   - pip install "tox==2.1.1"
+  - pip install libtorrent --user
 
 env:
   global:
-    - APTPACKAGES="python-libtorrent"
     - APTPACKAGES_GTKUI="python-gobject python-glade2"
     - DISPLAY=:99.0
   matrix:
